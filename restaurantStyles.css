@@ -7,6 +7,20 @@ body {
 	min-height:100%;
 	position:relative;
 }
+a {
+	font-weight: none;
+	text-decoration: underline;
+	color: black
+}
+a:visited {
+	color: darkred
+}
+a:hover {
+	font-weight: bold;
+}
+a:active {
+	text-decoration: none;
+}
 #header {
 	padding:0px;
 }
@@ -15,7 +29,6 @@ body {
 	color:darkred;
 	text-align: center;
 	font-size: 60px;
-	background:
 }
 #homecontent,#menucontent,#contactcontent {
 	padding-bottom:100px; /* Height of the footer element */
@@ -25,6 +38,35 @@ body {
 }
 #homecontent {
 	background-color:#F7C3C3;
+}
+#fooditems {
+	text-align: center;
+	border-spacing: 1em;
+}
+#fooditems th, #fooditems td {
+	width:33%;
+	font-style:italic;
+	}
+#fooditems th, #beverages th {
+	color:darkred;
+	font-size:20px;
+}
+#fooditems td #beverages td{
+	color: #460303
+}
+#beverages th, beverages td {
+	text-align:left;
+	font-style: italic;
+}
+#beverages th {
+	text-decoration: underline;
+}
+#beverages {
+	width:35%;
+	padding-top:20px;
+}
+#price {
+	text-align:right;
 }
 #footer {
 	width:100%;

@@ -4,23 +4,6 @@
         <title>Menu</title>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-                table, th, td {
-                    text-align: center;
-                    border-spacing: 1em;
-                }
-                th, td {
-                    width:33%;
-                    font-style:italic;
-                    }
-                th {
-                    color:darkred;
-                    font-size:20px;
-                }
-                td {
-                    color: #460303
-                }
-        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -34,35 +17,35 @@
             </div>
             <div id="menucontent">
                 <center>
-                    <table>
-                        <div>
-                            <tr>
-                                <th>Spaghetti</th>
-                                <th>Brick Oven Pizza</th>
-                                <th>Chicken Parmasan</th>
-                            </tr>
-                        </div>
-                        <div>
-                            <tr>
-                                <td>An Italian Staple!<br.>Your Choice - GF or Regular Pasta <br/>Meat or Marinara Sauce.  
-                                    <br/>Add turkey meatballs
-                                    for additional $1.00.<br/>$15.35</td>
-                                <td>Brick oven is always better!<br/>Your Choice - GF or Regular Crust<br/>
-                                    Marinara, Cashew Cream or Olive Oil Sauce <br/>
-                                    Chicken or Turkey Sausage <br/>$12.95</td>
-                                <td>Hearty Favorite!<br/>Farm raised chicken breast breaded in GF or Regular 
-                                    Breadcrumbs with marinara sauce and topped with your choice of cheese.  Served with a side of GF or 
-                                    Regular pasta and sauce<br/>$17.50</td>
-                            </tr>
-                        </div>
-                        <div>
+                        <table id="fooditems">
+                            <thead>
+                                <tr>
+                                    <th>Spaghetti</th>
+                                    <th>Brick Oven Pizza</th>
+                                    <th>Chicken Parmasan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>An Italian Staple!<br.>Your Choice - GF or Regular Pasta <br/>Meat or Marinara Sauce.  
+                                        <br/>Add turkey meatballs
+                                        for additional $1.00.<br/>$15.35</td>
+                                    <td>Brick oven is always better!<br/>Your Choice - GF or Regular Crust<br/>
+                                        Marinara, Cashew Cream or Olive Oil Sauce <br/>
+                                        Chicken or Turkey Sausage <br/>$12.95</td>
+                                    <td>Hearty Favorite!<br/>Farm raised chicken breast breaded in GF or Regular 
+                                        Breadcrumbs with marinara sauce and topped with your choice of cheese.  Served with a side of GF or 
+                                        Regular pasta and sauce<br/>$17.50</td>
+                                </tr>
+                            </tbody>
+                            <thead>
                                 <tr>
                                     <th>Raviolli</th>
                                     <th>House Salad</th>
                                     <th>Tiramisu</th>
                                 </tr>
-                            </div>
-                            <div>
+                            </thead>
+                            <tbody>
                                 <tr>
                                     <td>Perfection!<br.>Your Choice - GF or Regular Raviolli <br/>Meat or Marinara Sauce.  
                                         <br/>Delicious Butternut Squash stuffed raviolli.
@@ -71,9 +54,34 @@
                                         GF or Regular Crutons and your choice of cheese<br/>Served with a lemon raspberry vinaigrette
                                         <br/>$12.95</td>
                                     <td>Sweet and Satisfying!<br/>Our Tiramisu is made with organic coffee from the Green Mountains.<br/>
-                                        We use a cashew cream and gf ladyfingers.<br/>$17.50</td>
+                                            We use a cashew cream and gf ladyfingers.<br/>$17.50</td>
                                 </tr>
-                            </div>
+                            </thead>
+                        </table>
+                    <table id="beverages">
+                        <thead>
+                            <tr>
+                                <th>Beverages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Root Beer</td>
+                                <td id="price">$3.00</td>
+                            </tr>
+                            <tr>
+                                <td>Bottled Water</td>
+                                <td id="price">$1.00</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td id="price">$1.25</td>
+                            </tr>
+                            <tr>
+                                <td>Glass of Wine</td>
+                                <td id="price">$6.00</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </center>
             </div>
