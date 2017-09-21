@@ -1,15 +1,39 @@
-h1,footer {
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#wrapper{
+	min-height:100%;
+	position:relative;
+}
+/*#header {
+	padding:0px;
+}*/
+#restaurantheader {
+	font-style:italic;
+	color:darkred;
+	text-align: center;
+	font-size: 60px;
+	background:
+}
+#homecontent,#menucontent,#contactcontent {
+	padding-bottom:100px; /* Height of the footer element */
+}
+#menucontent {
+	background-color:lightgray;
+}
+#homecontent {
+	background-color:#F7C3C3;
+}
+#footer {
+	width:100%;
+	height:100px;
+	position:absolute;
+	bottom:0;
+    left:0;
+    font-size: 16px;
     font-style:italic;
     color:darkred;
     text-align: center;
-}
-h1 {
-    font-size: 60px;
-}
-
-footer {
-    font-size: 16px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }

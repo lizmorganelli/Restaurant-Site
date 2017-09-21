@@ -24,84 +24,90 @@
         </style>
     </head>
     <body>
-        <h1>Ristorante Morganelli</h1>
-        <hr/>
-        <div>
-            <a href="index.html">Home</a>&emsp;
-            <a href="menu.html">Menu</a>&emsp;
-            <a href="contact.html">Contact Us</a>&emsp;
-        <hr/>
-        </div>
-        </center><br/><br/>
-            <form action="#" method="POST">
-                <table>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="FullNameLabel" for="FullName">Name:</label></td> 
-                        <td><input type="text" name="FullName"/></td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="EmailLabel" for="Email">Email:</label></td>
-                        <td><input type="text" name="Email"/></td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="PhoneLabel" for="Phone">Phone:</label></td>
-                        <td><input type="text" name="Phone"/></td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="ReasonLabel" for="Reason">Reason for Inquiry:</label></td>
-                        <td><select name="Reason">
-                            <option class="contactresponse" value="Catering">Catering</option>
-                            <option class="contactresponse" value="PrivateParty">Private Party</option>
-                            <option class="contactresponse" value="Feedback">Feedback</option>
-                            <option class="contactresponse" value="Other">Other</option>
-                            </select></td>
-                    </tr>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="AddtnlInfoLabel" for="AddtnlInfo">Additional Information:</label></td>
-                        <td class="contactresponse"><textarea name="AddtnlInfo"></textarea></td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="HaveYouBeenLabel" for="HaveYouBeen">Have you been to the restaurant?</label></td>
-                        <td class="contactresponse"><input type="radio" name="HaveYouBeen" value="No" checked>No
-                        <input type="radio" name="HaveYouBeen" value="Yes">Yes</td>
-                    </tr>
-                </div>
-                <div>
-                    <tr>
-                        <td class="contactlabel"><label id="DayLabel" for="Day">Best days to contact you:</label></td>
-                        <td class="contactresponse"><input type="checkbox" name="Day" value="M">M
-                        <input type="checkbox" name="Day" value="T">T
-                        <input type="checkbox" name="Day" value="W">W
-                        <input type="checkbox" name="Day" value="Th">Th
-                        <input type="checkbox" name="Day" value="F">F
-                        </td>
-                    </tr>
-                </div>
-                </table>
-                <div>
-                    <center>
-                        <input class="send" type="submit" value="Send Request"/> 
-                    </center>
-                </div>
-            </form>
-        <footer>
+        <div id="wrapper">
+            <div id="header"></div>
+                <h1 id="restaurantheader">Ristorante Morganelli</h1>
                 <hr/>
-                <p>
-                4242 Mostaccioli Lane, Rollinsford, NH 03869
-                </p>
-                <p>
-                (630) 230-9878
-                </p>
-        </footer>
+                <a href="index.html">Home</a>&emsp;
+                <a href="menu.html">Menu</a>&emsp;
+                <a href="contact.html">Contact Us</a>&emsp;
+                <hr/>
+            </div>
+            <div id="contactcontent">
+                <br/><br/>
+                <form action="#" method="POST">
+                    <table>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="FullNameLabel" for="FullName">Name:</label></td> 
+                                <td><input type="text" name="FullName"/></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="EmailLabel" for="Email">Email:</label></td>
+                                <td><input type="text" name="Email"/></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="PhoneLabel" for="Phone">Phone:</label></td>
+                                <td><input type="text" name="Phone"/></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="ReasonLabel" for="Reason">Reason for Inquiry:</label></td>
+                                <td><select name="Reason">
+                                    <option class="contactresponse" value="Catering">Catering</option>
+                                    <option class="contactresponse" value="PrivateParty">Private Party</option>
+                                    <option class="contactresponse" value="Feedback">Feedback</option>
+                                    <option class="contactresponse" value="Other">Other</option>
+                                    </select></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="AddtnlInfoLabel" for="AddtnlInfo">Additional Information:</label></td>
+                                <td class="contactresponse"><textarea name="AddtnlInfo"></textarea></td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="HaveYouBeenLabel" for="HaveYouBeen">Have you been to the restaurant?</label></td>
+                                <td class="contactresponse"><input type="radio" name="HaveYouBeen" value="No" checked>No
+                                <input type="radio" name="HaveYouBeen" value="Yes">Yes</td>
+                            </tr>
+                        </div>
+                        <div>
+                            <tr>
+                                <td class="contactlabel"><label id="DayLabel" for="Day">Best days to contact you:</label></td>
+                                <td class="contactresponse"><input type="checkbox" name="Day" value="M">M
+                                <input type="checkbox" name="Day" value="T">T
+                                <input type="checkbox" name="Day" value="W">W
+                                <input type="checkbox" name="Day" value="Th">Th
+                                <input type="checkbox" name="Day" value="F">F
+                                </td>
+                            </tr>
+                        </div>
+                    </table>
+                        <div>
+                            <center>
+                                <input class="send" type="submit" value="Send Request"/> 
+                            </center>
+                        </div>
+            </div>
+            <div id="footer">
+                <hr/>
+                <footer>
+                    <p>
+                    4242 Mostaccioli Lane, Rollinsford, NH 03869
+                    </p>
+                    <p>
+                    (630) 230-9878
+                    </p>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>
