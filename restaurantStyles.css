@@ -7,9 +7,9 @@ body {
 	min-height:100%;
 	position:relative;
 }
-/*#header {
+#header {
 	padding:0px;
-}*/
+}
 #restaurantheader {
 	font-style:italic;
 	color:darkred;
