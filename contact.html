@@ -2,51 +2,142 @@
 <html>
     <head>
         <title>Contact Us</title>
-        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+        <link href="http://glyphicons.com/" rel="text/css" type"glyphicon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
         <style>
-                table, tr, td {border-spacing: 5px;
-                }
                 .contactlabel {
-                    text-align:right;
                     font-weight:bold
                 }
-                .contactlabel,.contactresponse,.send {
+                .contactlabel,.send {
                     font-style:italic;
                     color:darkred;
                 }
-                .contactlabel,.contactresponse {
+                .contactlabel {
                     font-size:20px;
                 }
                 .send {
                     font-size:14px;
+                    text-align:center;
                 }
         </style>
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header"></div>
-                <h1 id="restaurantheader">Ristorante Morganelli</h1>
-                <ul class="nav nav-tabs">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <!--</ul>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>&emsp;
-                <a href="contact.html">Contact Us</a>&emsp;-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="restaurantheader">Ristorante Morganelli</h1>
+                </div>
             </div>
-            <div id="contactcontent">
-                <br/><br/>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+         <div id="contactcontent">
+            <div class="container">
                 <form action="#" method="POST">
+                    <div class="form=group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="FullNameLabel" for="FullName">Name:</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="FullName"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="EmailLabel" for="Email">Email:</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="Email"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="PhoneLabel" for="Phone">Phone:</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" name="Phone"/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="ReasonLabel" for="Reason">Reason for Inquiry:</label></h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <select name="Reason">
+                                <option value="Catering">Catering</option>
+                                <option value="PrivateParty">Private Party</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Other">Other</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="AddtnlInfoLabel" for="AddtnlInfo">Additional Information:</label></h3>
+                        </div>
+                        <div class="col-sm-6">                                
+                            <textarea name="AddtnlInfo"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="HaveYouBeenLabel" for="HaveYouBeen">Have you been to the restaurant?</label></h3>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="radio" name="HaveYouBeen" value="No" checked>No
+                            <input type="radio" name="HaveYouBeen" value="Yes">Yes
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label class="contactlabel" id="DayLabel" for="Day">Best days to contact you:</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="checkbox" name="Day" value="M">M
+                            <input type="checkbox" name="Day" value="T">T
+                            <input type="checkbox" name="Day" value="W">W
+                            <input type="checkbox" name="Day" value="Th">Th
+                            <input type="checkbox" name="Day" value="F">F              
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-sm-6 col-sm-6">
+                            <input class="send" type="submit" value="Send Request"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--</div>
+                <center>
+                    <input class="send" type="submit" value="Send Request"/> 
+                </center>
+        </div>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="footer">
+                        <hr/>
+                        <footer>
+                            <p>4242 Mostaccioli Lane, Rollinsford, NH 03869</p>
+                            <p>(630) 230-9878</p>
+                        </footer>                        
+                    </div>
+                </div>
+           </div>
+        </div>
+                <!--<form action="#" method="POST">
                     <table>
                         <div>
                             <tr>
@@ -101,24 +192,6 @@
                                 </td>
                             </tr>
                         </div>
-                    </table>
-                        <div>
-                            <center>
-                                <input class="send" type="submit" value="Send Request"/> 
-                            </center>
-                        </div>
-            </div>
-            <div id="footer">
-                <hr/>
-                <footer>
-                    <p>
-                    4242 Mostaccioli Lane, Rollinsford, NH 03869
-                    </p>
-                    <p>
-                    (630) 230-9878
-                    </p>
-                </footer>
-            </div>
-        </div>
-    </body>
-</html>
+                    </table>-->
+
+        

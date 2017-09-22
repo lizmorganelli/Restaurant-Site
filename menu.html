@@ -2,31 +2,159 @@
 <html>
     <head>
         <title>Menu</title>
+        <link href="http://glyphicons.com/" rel="text/css" type"glyphicon"/>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
-        <div id="wrapper">
-            <div id="header"></div>
-                <h1 id="restaurantheader">Ristorante Morganelli</h1>
-                <ul class="nav nav-tabs">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="menu.html">Menu</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <!--</ul>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>&emsp;
-                <a href="contact.html">Contact Us</a>&emsp;-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="restaurantheader">Ristorante Morganelli</h1>
+                </div>
             </div>
-            <div id="menucontent">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul class="nav nav-pills">
+                        <li><a href="index.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="menucontent">
+            <div id="fooditems">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4"><h3>Spaghetti</h3>
+                            <p>An Italian Staple!<br/>Your Choice - GF or Regular Pasta <br/>Meat or Marinara Sauce.  
+                            <br/>Add turkey meatballs
+                            for additional $1.00.<br/>$15.35</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Brick Oven Pizza</h3>
+                            <p>Brick oven is always better!<br/>Your Choice - GF or Regular Crust<br/>
+                            Marinara, Cashew Cream or Olive Oil Sauce <br/>
+                            Chicken or Turkey Sausage <br/>$12.95</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3>Chicken Parmigiana</h3>
+                            <p>Hearty Favorite!<br/>Farm raised chicken breast breaded in GF or Regular 
+                                Breadcrumbs with marinara sauce and topped with your choice of cheese.  Served with a side of GF or 
+                                Regular pasta and sauce<br/>$17.50</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-4"><h3>Ravioli</h3>
+                                <p>Perfection!<br/>Your Choice - GF or Regular Raviolli <br/>Meat or Marinara Sauce.  
+                                    <br/>Delicious Butternut Squash stuffed raviolli.
+                                    <br/>$15.35</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3>House Salad</h3>
+                                <p>On the Lighter Side!<br/>Romaine Hearts with roasted beets, cucumber, carrots and sweet pepper<br/>
+                                    GF or Regular Crutons and your choice of cheese<br/>Served with a lemon raspberry vinaigrette
+                                    <br/>$12.95</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3>Tiramisu</h3>
+                                <p>Sweet and Satisfying!<br/>Our Tiramisu is made with organic coffee from the Green Mountains.<br/>
+                                    We use a cashew cream and gf ladyfingers.<br/>$17.50</p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div id="beverages">
+                <div id="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
+                            <h3>Beverages</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
+                            <p>Root Beer</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>$3.00</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
+                            <p>Bottled Water</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>$1.00</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
+                            <p>Lemonade</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>$1.25</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4">
+                            <p>Glass of Wine</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>$6.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div id="footer">
+                            <hr/>
+                            <footer>
+                                <p>4242 Mostaccioli Lane, Rollinsford, NH 03869</p>
+                                <p>(630) 230-9878</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>    
+<!--<div class="row">
+                    <div class="col-sm-4">An Italian Staple!<br.>Your Choice - GF or Regular Pasta <br/>Meat or Marinara Sauce.  
+                        <br/>Add turkey meatballs
+                        for additional $1.00.<br/>$15.35</div>
+                    <div class="col-sm-4">Brick oven is always better!<br/>Your Choice - GF or Regular Crust<br/>
+                        Marinara, Cashew Cream or Olive Oil Sauce <br/>
+                        Chicken or Turkey Sausage <br/>$12.95</div>
+                    <div class="col-sm-4">Hearty Favorite!<br/>Farm raised chicken breast breaded in GF or Regular 
+                        Breadcrumbs with marinara sauce and topped with your choice of cheese.  Served with a side of GF or 
+                        Regular pasta and sauce<br/>$17.50</div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-4">Ravioli</div>
+                        <div class="col-sm-4">House Salad</div>
+                        <div class="col-sm-4">Tiramisu</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">Perfection!<br.>Your Choice - GF or Regular Raviolli <br/>Meat or Marinara Sauce.  
+                            <br/>Delicious Butternut Squash stuffed raviolli.
+                            <br/>$15.35</div>
+                        <div class="col-sm-4">On the Lighter Side!<br/>Romaine Hearts with roasted beets, cucumber, carrots and sweet pepper<br/>
+                            GF or Regular Crutons and your choice of cheese<br/>Served with a lemon raspberry vinaigrette
+                            <br/>$12.95</div>
+                        <div class="col-sm-4">Sweet and Satisfying!<br/>Our Tiramisu is made with organic coffee from the Green Mountains.<br/>
+                            We use a cashew cream and gf ladyfingers.<br/>$17.50</div>
+                    </div> 
+            </div>--> 
+        
+        <!--<div id="menucontent">
                 <center>
                         <table id="fooditems">
                             <thead>
@@ -68,8 +196,8 @@
                                             We use a cashew cream and gf ladyfingers.<br/>$17.50</td>
                                 </tr>
                             </thead>
-                        </table>
-                    <table id="beverages">
+                        </table>-->
+                    <!--<table id="beverages">
                         <thead>
                             <tr>
                                 <th>Beverages</th>
@@ -94,19 +222,4 @@
                             </tr>
                         </tbody>
                     </table>
-                </center>
-            </div>
-            <div id="footer">
-                <hr/>
-                <footer>
-                    <p>
-                    4242 Mostaccioli Lane, Rollinsford, NH 03869
-                    </p>
-                    <p>
-                    (630) 230-9878
-                    </p>
-                </footer>
-            </div>
-        </div>
-    </body>
-</html>
+                </center>-->

@@ -3,10 +3,6 @@ body {
 	padding:0;
 	height:100%;
 }
-#wrapper{
-	min-height:100%;
-	position:relative;
-}
 a {
 	font-weight: none;
 	text-decoration: underline;
@@ -20,6 +16,7 @@ a:hover {
 }
 a:active {
 	text-decoration: none;
+	background-color:#f7c3c3;
 }
 #header {
 	padding:0px;
@@ -41,37 +38,31 @@ a:active {
 }
 #fooditems {
 	text-align: center;
-	border-spacing: 1em;
+	border-spacing: .5em;
 }
-#fooditems th, #fooditems td {
-	width:33%;
+#fooditems h3, #fooditems p {
 	font-style:italic;
 	}
-#fooditems th, #beverages th {
+#fooditems h3, #beverages h3 {
 	color:darkred;
 	font-size:20px;
 }
-#fooditems td #beverages td{
+#fooditems p, #beverages p{
 	color: #460303
 }
-#beverages th, beverages td {
-	text-align:left;
+#beverages h3, #beverages p {
 	font-style: italic;
 }
-#beverages th {
+#beverages h3 {
 	text-decoration: underline;
 }
 #beverages {
-	width:35%;
 	padding-top:20px;
-}
-#price {
-	text-align:right;
 }
 #footer {
 	width:100%;
 	height:100px;
-	position:absolute;
+	position:static;
 	bottom:0;
     left:0;
     font-size: 16px;
