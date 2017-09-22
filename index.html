@@ -4,8 +4,8 @@
         <title>Home Page</title>
         <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
         <link href="http://glyphicons.com/" rel="text/css" type"glyphicon"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
         <style>
             .restaurantdescription {
                 border: 2px solid black;
@@ -22,6 +22,10 @@
                 text-align: center;
                 padding-top: 5px;
                 padding-bottom: 5px;
+            }
+            .carousel-inner img {
+                margin:0 auto; 
+                height:325px;
             }
         </style>
     </head>
@@ -45,15 +49,47 @@
                 </div>
             </div>
         </div>
-         <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="images/rmrestaurant.jpg" alt="Location">
+                                <div class="carousel-caption">
+                                    <h3>We're opening a new location!</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/seasonal.jpg" alt="Seasonal">
+                                <div class="carousel-caption">
+                                    <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/drinks.jpg" alt="Drink">
+                                <div class="carousel-caption">
+                                    <h3>The Drink of the Month is SG Special Brew</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 jumbotron">
-                                <!--<div class="jumbotron">-->
                     <h2>GRAND OPENING!</h2>
                     <p>New Location in Portsmouth, NH opening on October 31st</p>
                 </div>
             </div>
-        </div>    
+        </div>-->   
                 <!--</ul>
                 <a href="index.html">Home</a>
                 <a href="menu.html">Menu</a>&emsp;
@@ -104,5 +140,8 @@
                 </div>
             </div>
         </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/npm.js"></script>
     </body>
 </html>
