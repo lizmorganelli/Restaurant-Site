@@ -3,7 +3,7 @@ body {
 	padding:0;
 	height:100%;
 }
-a {
+/*a {
 	font-weight: none;
 	text-decoration: underline;
 	color: black
@@ -17,6 +17,23 @@ a:hover {
 a:active {
 	text-decoration: none;
 	background-color:#f7c3c3;
+}*/
+.nav-pills a {
+	font-weight: none;
+	text-decoration: underline;
+	color: black;
+	font-size:20px;
+	font-style:italic;
+}
+.nav-pills a:visited {
+	color: darkred;
+}
+.nav-pills a:hover {
+	font-weight: bold;
+}
+.nav-pills a:active {
+	text-decoration: none;
+	background-color:#f7c3c3;
 }
 #header {
 	padding:0px;
@@ -26,6 +43,13 @@ a:active {
 	color:darkred;
 	text-align: center;
 	font-size: 60px;
+}
+#noscript {
+	text-align: center;
+	color: red;
+	font-weight: bold;
+	font-size:20px; 
+	padding: 10px:
 }
 #homecontent,#menucontent,#contactcontent {
 	padding-bottom:100px; /* Height of the footer element */
